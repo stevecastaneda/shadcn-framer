@@ -30,7 +30,7 @@ const DialogOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <motion.div
     initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
-    animate={{ opacity: 0.8, backdropFilter: "blur(4px)" }}
+    animate={{ opacity: 1, backdropFilter: "blur(4px)" }}
     exit={{
       opacity: 0,
       backdropFilter: "blur(0px)",
