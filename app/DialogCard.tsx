@@ -19,16 +19,18 @@ export function DialogCard() {
         <CardTitle>ShadUI Dialog + Framer Motion</CardTitle>
       </CardHeader>
       <CardContent>
-        <div>Click the button to open a dialog.</div>
         <div className="mt-4 flex justify-center">
           <Dialog onOpenChange={setOpen}>
             <DialogTrigger asChild>
-              <Button>Click Me</Button>
+              <Button>Click to Open Dialog</Button>
             </DialogTrigger>
-            <DialogContent open={open} className="sm:max-w-[425px]">
+            <DialogContent open={open} className="sm:max-w-xs">
               <DialogHeader>
-                <DialogTitle>Hello</DialogTitle>
-                <DialogDescription>This is my description</DialogDescription>
+                <DialogTitle className="text-center text-3xl">👋</DialogTitle>
+                <DialogDescription>
+                  I used a slower initial animation (0.2), and a faster exit
+                  (0.1).
+                </DialogDescription>
               </DialogHeader>
             </DialogContent>
           </Dialog>
