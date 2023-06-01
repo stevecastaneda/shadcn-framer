@@ -8,7 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog-motion-framer";
+} from "@/components/ui/dialog";
 
 export function DialogCard() {
   return (
