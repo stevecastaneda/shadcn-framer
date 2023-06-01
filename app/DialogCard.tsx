@@ -8,11 +8,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { useState } from "react";
+} from "@/components/ui/dialog-motion-framer";
 
 export function DialogCard() {
-  const [open, setOpen] = useState(false);
   return (
     <Card>
       <CardHeader>
@@ -20,11 +18,11 @@ export function DialogCard() {
       </CardHeader>
       <CardContent>
         <div className="mt-4 flex justify-center">
-          <Dialog onOpenChange={setOpen}>
+          <Dialog>
             <DialogTrigger asChild>
               <Button>Click to Open Dialog</Button>
             </DialogTrigger>
-            <DialogContent open={open} className="sm:max-w-xs">
+            <DialogContent className="sm:max-w-xs">
               <DialogHeader>
                 <DialogTitle className="text-center text-3xl">👋</DialogTitle>
                 <DialogDescription>
